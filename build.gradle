@@ -1,0 +1,25 @@
+plugins {
+  id 'java'
+}
+
+repositories {
+  jcenter()
+}
+
+dependencies {
+  // Junit 5 を導入
+  // https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter
+  testImplementation 'org.junit.jupiter:junit-jupiter:5.+'
+
+  // Mockito 3 を導入
+  // https://mvnrepository.com/artifact/org.mockito/mockito-core
+  testImplementation 'org.mockito:mockito-core:3.+'
+
+  // Mockito による JUnit 5 Extension ライブラリを導入
+  // https://mvnrepository.com/artifact/org.mockito/mockito-junit-jupiter
+  testImplementation 'org.mockito:mockito-junit-jupiter:3.+'
+
+  // hamcrest ライブラリを導入
+  // https://mvnrepository.com/artifact/org.hamcrest/hamcrest-core
+  testImplementation 'org.hamcrest:hamcrest-core:2.+'
+}
